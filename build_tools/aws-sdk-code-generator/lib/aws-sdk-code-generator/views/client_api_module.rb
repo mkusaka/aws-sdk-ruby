@@ -56,7 +56,7 @@ module AwsSdkCodeGenerator
       }
 
       METADATA_KEYS = {
-        # keep
+        # keep all
         'endpointPrefix' => true,
         'signatureVersion' => true,
         'signingName' => true,
@@ -67,14 +67,12 @@ module AwsSdkCodeGenerator
         'errorPrefix' => true,
         'timestampFormat' => true, # glacier api customization
         'xmlNamespace' => true,
-
-        # ignore
-        'apiVersion' => false,
-        'checksumFormat' => false,
-        'globalEndpoint' => false,
-        'serviceAbbreviation' => false,
-        'uid' => false,
-        'serviceId' => false,
+        'serviceId' => true,
+        'apiVersion' => true,
+        'checksumFormat' => true,
+        'globalEndpoint' => true,
+        'serviceAbbreviation' => true,
+        'uid' => true,
       }
 
       # @option options [required, Service] :service

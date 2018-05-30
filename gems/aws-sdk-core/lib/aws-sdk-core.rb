@@ -62,6 +62,11 @@ require_relative 'aws-sdk-core/rest'
 require_relative 'aws-sdk-core/xml'
 require_relative 'aws-sdk-core/json'
 
+# client metrics
+
+require_relative 'aws-sdk-core/client_side_monitoring/request_metrics'
+require_relative 'aws-sdk-core/client_side_monitoring/publisher'
+
 # aws-sdk-sts is vendored to support Aws::AssumeRoleCredentials
 
 require 'aws-sdk-sts'
