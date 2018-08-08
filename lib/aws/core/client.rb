@@ -371,6 +371,7 @@ module AWS
 
       def return_or_raise options, &block
         response = yield
+        pp response
         unless options[:async]
           raise response.error if response.error
         end
